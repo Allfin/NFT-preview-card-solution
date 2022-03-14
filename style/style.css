@@ -24,6 +24,11 @@
 
 body {
   background-color: var(--mainBG);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card_image img {
@@ -34,9 +39,7 @@ body {
 .card {
   display: flex;
   align-items: center;
-  height: 100vh;
   font-size: 18px;
-  max-width: 1440px;
 }
 
 .container {
@@ -97,7 +100,6 @@ p {
 
 .attribution {
   text-align: center;
-  background-color: black;
 }
 
 @media (max-width: 375px) {
