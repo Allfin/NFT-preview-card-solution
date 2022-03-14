@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: "Outfit", sans-serif;
+}
+
+/* === Layout === */
+
+body {
+  background-color: var(--mainBG);
+}
+
+.card_image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  max-width: 1440px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 375px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--cardBG);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price,
+.day {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+hr {
+  color: var(--line);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 15%;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  color: var(--soft-blue);
+}
+
+.price p {
+  color: var(--cyan);
+  font-weight: 900;
+}
+
+.attribution {
+  text-align: center;
+  background-color: black;
+}
+
+@media (max-width: 375px) {
+  .card {
+    margin: 0 20px;
+  }
+}
